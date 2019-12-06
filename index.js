@@ -285,7 +285,8 @@ function getGermanCars(inventory) {
  * const sum = function (a, b) {
  *   return a + b
  * }
- *
+ * 
+  
  * const addFive = function(num) {
  *    return num + 5
  * }
@@ -294,9 +295,16 @@ function getGermanCars(inventory) {
  *   return num * 2
  * }
  */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+
+const sum = (a, b) => {
+  a + b;
+}; // code here!
+const addFive = num => {
+  num + 5;
+}; // code here!
+const argTimesTwo = num => {
+  num * 2;
+}; // code here!
 
 /**
  * ### Challenge `carMaker`
@@ -315,8 +323,8 @@ function carMaker(num) {
   return {
     odometer: num,
     drive: function(distance) {
-      this.odometer += distance;
-      return this.odemeter;
+      this.odometer = this.odometer + distance;
+      return this.odometer;
     }
   };
 }
